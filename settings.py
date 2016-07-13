@@ -1,0 +1,3 @@
+SAMPLE_RATE = 44100
+SAMPLE_WIDTH = 2  # in bytes
+
