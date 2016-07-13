@@ -6,6 +6,7 @@ from oscillator import Oscillator
 
 p = pyaudio.PyAudio()
 osc = Oscillator(SAMPLE_RATE, SAMPLE_WIDTH)
+
 waveform = osc.square
 
 #file = wave.open('output.wav', 'wb')
