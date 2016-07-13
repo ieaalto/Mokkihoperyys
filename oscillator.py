@@ -1,6 +1,5 @@
-import tkinter as tk
 import math
-import matplotlib.pyplot as plt
+
 
 class Oscillator:
 
@@ -47,13 +46,3 @@ class Oscillator:
 
         self.t = self.t + 1 if self.t < self.samples_per_period - 1 else 0
         return sample
-
-    def plot(self, n, waveform):
-        data = []
-
-        for i in range(0, n):
-            data.append(self._get_next_sample(waveform))
-
-        plt.plot(data)
-        plt.draw()
-        plt.show()
